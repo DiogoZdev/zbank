@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import styles from './App.scss';
+import './App.scss';
 
 import Box from './components/Box';
 import Icon from './components/Icon';
-
 
 
 const Wrapper = styled.div`
