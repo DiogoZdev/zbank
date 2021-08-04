@@ -28,6 +28,23 @@
     justify-content: center;
     justify-items: center;
   }
+
+  .wrapper {
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+
+    margin: 2rem auto;
+    width: 450px;
+    aspect-ratio: 9/16;
+    border: 1rem #222 solid;
+    border-radius: 2.5rem;
+
+    @media (max-width:450px){
+      width:100%;
+      border:none;
+    }
+  }
   
   .screen {
     width:100%;

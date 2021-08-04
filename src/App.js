@@ -6,29 +6,6 @@ import Box from './components/Box';
 import Icon from './components/Icon';
 
 
-const Wrapper = styled.div`
-  display: block;
-  overflow: hidden;
-  background-color: #fff;
-
-  margin: 2rem auto;
-  width: 450px;
-  aspect-ratio: 9/16;
-  border: 1rem #222 solid;
-  border-radius: 2.5rem;
-
-  @media (max-width:450px){
-    width:100%;
-    border:none;
-  }
-`;
-
-const Screen = styled.div``;
-const Header = styled.div``;
-const Main = styled.div``;
-const Content = styled.div``;
-const Footer = styled.div``;
-
 function App() {
 
   const account = {
@@ -70,9 +47,9 @@ function App() {
 
   return (
     <>
-      <Wrapper>
-        <Screen classname="screen">
-          <Header className="header">
+      <div className="wrapper">
+        <div classname="screen">
+          <div className="header">
               <div className="header-top row">
                 <div className="welcome">
                   Olá, {user.name}! <br/>
@@ -82,28 +59,28 @@ function App() {
               </div>
 
               <div className="header-bottom">
-                <Content className="content-row">
+                <div className="content-row">
                   <Icon type="pagar" />
                   <Icon type="transferir" />
                   <Icon type="pix" />
                   <Icon type="extrato" />
-                </Content>
+                </div>
               </div>
-          </Header>
-          <Main className="main">
+          </div>
+          <main className="main">
             <div className="content-col">
               <Box title="Conta Corrente" value={parseFloat(account.balance).toFixed(2)}/>
               <Box title="Poupança" value={parseFloat(account.savings).toFixed(2)}/>
               <Box title="Investimentos" value={parseFloat(account.investments).toFixed(2)}/>
             </div>
-          </Main>
-          <Footer className="footer">
+          </main>
+          <footer className="footer">
             <div className="content-col">
 
             </div>
-          </Footer>
-        </Screen>
-      </Wrapper>
+          </footer>
+        </div>
+      </div>
     </>
   );
 }
