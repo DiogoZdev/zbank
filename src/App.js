@@ -9,8 +9,8 @@ import Icon from './components/Icon';
 function App() {
 
   const account = {
-    id:'5824',
-    agency:'55852-8',
+    branch:'1234',
+    accountID:'12435-6',
     balance:2800.35,
     savings:500,
     investments:1500,
@@ -39,11 +39,11 @@ function App() {
     name:'Diogo',
     surname:'Larsen',
     document:'123654789-12',
-    agency:account.agency,
-    account: account.id,
+    branch:account.branch,
+    account: account.accountID,
   }
 
-  document.title = `Olá, ${user.name}`;
+  document.title = `zBank - ${user.name}`;
 
   return (
     <>
@@ -53,7 +53,7 @@ function App() {
               <div className="header-top row">
                 <div className="welcome">
                   Olá, {user.name}! <br/>
-                  {account.id} / {account.agency} {account.bclass}
+                  {account.accountID} / {account.branch} {account.bclass}
                 </div>
                 <div className="menu">☰</div>
               </div>
@@ -69,9 +69,9 @@ function App() {
           </div>
           <main className="main">
             <div className="content-col">
-              <Box title="Conta Corrente" value={parseFloat(account.balance).toFixed(2)}/>
-              <Box title="Poupança" value={parseFloat(account.savings).toFixed(2)}/>
-              <Box title="Investimentos" value={parseFloat(account.investments).toFixed(2)}/>
+              <Box title="Conta Corrente" value={parseFloat(account.balance).toFixed(2)} btnInfo="Ver extrato"/>
+              <Box title="Poupança" value={parseFloat(account.savings).toFixed(2)} btnInfo="Mais detalhes"/>
+              <Box title="Investimentos" value={parseFloat(account.investments).toFixed(2)} btnInfo="Ver aplicações"/>
             </div>
           </main>
           <footer className="footer">
