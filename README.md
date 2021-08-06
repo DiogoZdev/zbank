@@ -1,18 +1,18 @@
-### zBank
+# zBank
 
-#### Technical Info
+## Technical Info
 - Project created using ReactJS.
 - Components created with JSX
 - Style with Sass imported
 
 
-#### About
+## About
 
 Zbank is created first to be a banking app layout.
 Features are being added to make it more interactive.
 
 
-#### Last updates
+## Last updates
 
 August 05, 2021 - Input and Button components added. Initial login page created.
 
