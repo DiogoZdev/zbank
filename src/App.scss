@@ -9,9 +9,16 @@
     --gray2:#c8c8c8;
     --light-shadow: inset 5px 5px 5px #fff;
     --dark-shadow: inset -5px -5px 5px #0005;
-
     --dark-font:#555555;
+
+    --rounded:8px;
   }
+
+  img {
+    width: 100%;
+  }
+
+ 
   
   ::-webkit-scrollbar { display: none; }
   
@@ -47,6 +54,59 @@
       border:none;
     }
   }
+  // INITIAL LOGIN SCREEN
+
+  .login-panel {
+    position:absolute;
+    inset:0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient);
+
+    &-content{
+      width: 80%;
+      aspect-ratio: 1;
+      //background-color: var(--blue);
+      
+    }
+
+    .logo-area{
+      width:100%;
+    }
+
+    .input {
+      width:100%;
+      padding:1rem;
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      border:none;
+      border-radius: var(--rounded);
+
+      appearance:textfield;
+    }
+
+    .button {
+      padding:1rem;
+      width: 50%;
+      margin:1rem 0;
+      float: right;
+      border:none;
+      border-radius: var(--rounded);
+
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: #222;
+        color:white;
+      }
+    }
+
+  }
+
+
+  // INSIDE APPLICATION
   
   .screen {
     width:100%;

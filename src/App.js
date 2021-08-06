@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import './App.scss';
+import logo from './zbank.svg';
 
 import Box from './components/Box';
 import Icon from './components/Icon';
+import Input from './components/Input';
+import Button from './components/Button';
 
 
 function App() {
@@ -48,6 +51,14 @@ function App() {
   return (
     <>
       <div className="wrapper">
+        <div className="login-panel">
+          <div className="login-panel-content">
+            <div className="logo-area"><img src={logo} alt="zbank icon"/></div>
+            <Input type="number" placeholder="CPF"/>
+            <Input type="password" placeholder="Senha"/>
+            <Button value="Acessar" action="login"/>
+          </div>
+        </div>
         <div classname="screen">
           <div className="header">
               <div className="header-top row">

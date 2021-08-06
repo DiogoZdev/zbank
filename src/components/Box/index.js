@@ -21,7 +21,7 @@ function Box(prop) {
               <h3>R$ {prop.value}</h3>
               <button className="button">{(prop.btnInfo) ? prop.btnInfo : "Ver mais"}</button>
             </div>  
-          : <h3>[- - - -]</h3>}
+          : <h3>_-_-_-_</h3>}
       </div>
     )};
 
