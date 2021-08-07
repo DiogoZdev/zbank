@@ -47,10 +47,14 @@ function App() {
 
   document.title = `zBank - ${user.name}`;
 
+  function toggleLogin() {
+    document.querySelector("#login-panel").classList.toggle("hidden");
+  }
+
   return (
     <>
       <div className="wrapper">
-        <div className="login-panel">
+        <div className="login-panel" id="login-panel">
           <div className="login-panel-content">
             <div className="logo-area"><img src={logo} alt="zbank icon"/></div>
             <Input type="number" placeholder="CPF"/>
@@ -65,7 +69,7 @@ function App() {
                   Olá, {user.name}! <br/>
                   {account.accountID} / {account.branch} {account.bclass}
                 </div>
-                <div className="menu">☰</div>
+                <div className="menu" onClick={toggleLogin}>☰</div>
               </div>
 
               <div className="header-bottom">

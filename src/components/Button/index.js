@@ -2,14 +2,14 @@ import React from 'react';
 
 function Button(props) {
 
-    function login() {
-
+    function toggleLogin() {
+        document.querySelector("#login-panel").classList.toggle("hidden");
     }
 
     return(
         <>
             <button className="button"
-                onClick={props.action}>
+                onClick={toggleLogin}>
                     {props.value}
                 </button>
         </>

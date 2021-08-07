@@ -14,6 +14,8 @@ Features are being added to make it more interactive.
 
 ## Last updates
 
+August 06, 2021 - Simple switch from login panel to account info panel. Visual purposes only.
+
 August 05, 2021 - Input and Button components added. Initial login page created.
 
 July 29, 2021 - React app project initialized
