@@ -38,8 +38,8 @@ function App() {
   }
 
   let user = {
-    name:'Diogo',
-    surname:'Larsen',
+    name:'James',
+    surname:'J',
     document:'123654789-12',
     branch:account.branch,
     account: account.accountID,
