@@ -28,10 +28,8 @@ function App() {
 
     withdraw: function(toWithdraw) {
       if (toWithdraw > this.balance){
-        return ErrorEvent = () => {
-          alert('Saldo insuficiente');
-        }
-      } else {
+        alert('Saldo insuficiente');
+        } else {
         this.balance -= toWithdraw;
       }
     },
